@@ -82,16 +82,16 @@ dropDown2.addEventListener("click", () => {
   darkModeDropDown.classList.toggle("active");
 });
 
-const ellipse = document.querySelector("  .ellipsis .ellipse");
-const popupContainer = document.querySelector("  .popup-side-bar");
+// const ellipse = document.querySelector("  .ellipsis .ellipse");
+// const popupContainer = document.querySelector("  .popup-side-bar");
 
-ellipse.addEventListener("click", () => {
-  popupContainer.classList.add("active");
+// ellipse.addEventListener("click", () => {
+//   popupContainer.classList.add("active");
 
-  const xMark = document.querySelector("x-mark-close");
+//   const xMark = document.querySelector("x-mark-close");
 
-  xMark.addEventListener("click", () => {
-    if (popupContainer.classList.contains)
-      popupContainer.classList.remove("active");
-  });
-});
+//   xMark.addEventListener("click", () => {
+//     if (popupContainer.classList.contains)
+//       popupContainer.classList.remove("active");
+//   });
+// });
