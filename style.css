@@ -1364,7 +1364,7 @@ li {
 
 @media only screen and (max-width: 376px) {
   .center {
-    max-width: 350px;
+    max-width: 340px;
   }
 
   #main .hero .hero-bottom .btn-container .highlight {
@@ -1374,12 +1374,12 @@ li {
     padding: 10px;
   }
   #include .include-container .left-installation {
-    width: 100vw;
-    padding-right: 20px;
+    width: 90vw;
+    /* padding-right: 20px; */
   }
   #include .include-container .right-installation {
-    width: 100vw;
-    padding-right: 20px;
+    width: 90vw;
+    /* padding-right: 20px; */
   }
 }
 @media only screen and (max-width: 350px) {
@@ -1401,5 +1401,18 @@ li {
   }
   .support {
     font-size: 12px;
+  }
+
+  #read-get-started .read-get-started-cont .imgs-container .img-container img {
+    width: 60px;
+  }
+
+  .quickly-container .toggle-btn-container .first-toggle .toggle-first {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .quickly-container .toggle-btn-container .second-toggle .toggle-first {
+    padding: 5px;
+    font-size: 14px;
   }
 }
