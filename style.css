@@ -1328,7 +1328,7 @@ li {
 }
 @media only screen and (max-width: 426px) {
   .center {
-    max-width: 350px;
+    max-width: 370px;
   }
 
   .support {
@@ -1348,6 +1348,25 @@ li {
   .toggle-dropdown-container .dropdown-popup-menu ul li {
     white-space: nowrap;
   }
+  #main .hero .hero-bottom .btn-container .read-docs .read {
+    width: 100vw;
+  }
+
+  #include .include-container .left-installation {
+    width: 90vw;
+    /* padding-right: 20px; */
+  }
+  #include .include-container .right-installation {
+    width: 90vw;
+    /* padding-right: 20px; */
+  }
+
+  #include > div > div.left-installation.left-include {
+    width: 90vw;
+  }
+  #include > div > div.right-installation.right-include {
+    width: 90vw;
+  }
 
   #installation .installation-container {
     display: flex;
@@ -1360,6 +1379,23 @@ li {
   #footer .footer-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  /*  */
+  #main .hero .hero-bottom .btn-container .highlight {
+    padding: 10px;
+  }
+  #main .hero .hero-bottom .btn-container .read-docs .read {
+    padding: 10px;
+  }
+  #include .include-container .left-installation {
+    width: 90vw;
+    /* padding-right: 20px; */
+  }
+  #include .include-container .right-installation {
+    width: 90vw;
+    /* padding-right: 20px; */
+  }
+
+  /*  */
 }
 
 @media only screen and (max-width: 376px) {
