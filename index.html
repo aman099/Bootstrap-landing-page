@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+
+    <!-- Poppins Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--  -->
+    <!-- Prism JS -->
+    <!-- <link rel="stylesheet" href="prism.css"> -->
+    <!--  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <script src="prism.js" defer></script> -->
+    <script src="script.js" defer></script>
+    <title>Bootstrap clone</title>
+  </head>
+  <body>
+    <div class="modal">
+      <form action="">
+        <div class="input-container">
+          <span><i class="fa-solid fa-magnifying-glass fa-2xl"></i></span>
+          <input type="text" placeholder="Search">
+      </div>
+
+      </form>
+    </div>
+    <div class="overlay"></div>
+
+    <nav id="nav">
+      <div class="nav-container center">
+        <div class="left-nav">
+            <ul>
+                <li><img src="./assets/svg exports/Bootstrap.png" alt=""></li>
+                <li>Docs</li>
+                <li>Examples</li>
+                <li>Icons</li>
+                <li>Themes</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="middle-nav">
+            <div class="input-container">
+                <span><i class="fa-solid fa-magnifying-glass fa-2xl"></i></span>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="right-nav">
+            <ul>
+                <li><span><i class="fa-brands fa-github"></i></span></li>
+                <li><span><i class="fa-brands fa-twitter"></i></span></li>
+                <li><span><img src="" alt=""></span></li>
+                <li class="dropd-1">v5.3 <span class="droppdown dropdown-nav-1"><i class="fa-solid fa-caret-down"></i></span></li>
+                <li class="dropd-2"><span class="droppdown dropdown-nav-2"><i class="fa-solid fa-sun"></i></span><i class="fa-solid fa-caret-down"></i><span></span></li>
+            </ul>
+
+            <div class="version-droppdown-popup">
+              <ul>
+                <li>v5 releases</li>
+                <li class="activated">Latest (5.3.x)</li>
+                <li>v5.2.3</li>
+                <li>v5.1.3</li>
+                <li>v5.0.2</li>
+              </ul>
+              <ul>
+                <li class="not-active">v5 releases</li>
+                <li>v4.6x</li>
+                <li>v3.4.1</li>
+                <li>v2.3.2</li>
+              </ul>
+              <ul>
+                <li>All versions</li>
+              </ul>
+            </div>
+            <div class="darkmode-droppdown-popup">
+              <ul>
+                <li class="active"><span><img src="./assets/svg exports/svgexport-7.png" alt=""></span> Light</li>
+                <li><span><img src="./assets/svg exports/svgexport-10.png" alt=""></span> Dark</li>
+                <li><span><img src="./assets/svg exports/svgexport-12.png" alt=""></span> Auto</li>
+              </ul>
+            </div>
+        </div>
+        <div class="ellipsis">
+          <div class="ellipse"><i class="fa-solid fa-ellipsis"></i></div>
+        </div>
+        <div class="popup-side-bar">
+          <div class="popup-sidebar-container">
+            <div class="heading-sidebar">
+              <h5>Bootstrap</h5>
+              <p class="x-mark-close"><span><i class="fa-solid fa-xmark"></i></span></p>
+            </div>
+            <div class="sidebar-menus-top">
+              <ul>
+                <div class="flex-sidebar">
+                  <li>Docs</li>
+                  <li>Examples</li>
+                </div>
+                <div class="flex-sidebar">
+                  <li>Icons</li>
+                  <li>Themes</li>
+                </div>
+                <li>Blog</li>
+              </ul>
+            </div>
+            <div class="sm-sidebar">
+              <div class="left-sm">
+                <span><i class="fa-brands fa-github"></i> GitHub</span>
+                <span><i class="fa-brands fa-twitter"></i> Twitter</span>
+              </div>
+              <div class="right-sm"></div>
+            </div>
+            <div class="boostrap-vers-sidebar">
+              <div class="">Bootstrap v5.3<span><i class="fa-solid fa-caret-down"></i></span></div>
+              <div class="">Toggle Theme<span><i class="fa-solid fa-caret-down"></i></span></div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main id="main">
+      <article class="hero center">
+        <div class="hero-top">
+          <div class="support"><strong>New!</strong> Never Ending Support for Bootstrap <span class="arr"><i class="fa-solid fa-arrow-right"></i></span></div>
+        </div>
+        <div class="hero-middle">
+          <div class="hero-img-container">
+            <img src="./assets/bootstrap-logo-shadow.png" alt="">
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <div class="haeding-container">
+            <h1>Build fast, responsive sites <br> with Bootstrap</h1>
+          </div>
+          <div class="para-container">
+            <p>Powerful, extensible, and feature-packed frontend toolkit. Build and <br> customize with Sass, utilize prebuilt grid system and components, and bring <br> projects to life with powerful JavaScript plugins.</p>
+          </div>
+          <div class="btn-container">
+            <div class="highlight">$ &nbsp; 
+              <pre><code>npm i bootstrap@5.3.3</code></pre>
+              <span class="clipboard"><i class="fa-regular fa-clipboard"></i></span>
+            </div>
+            <div class="read-docs">
+              <button class="btn read"><span><i class="fa-solid fa-book-open"></i></span> Read Docs</button>
+            </div>
+          </div>
+          <div class="version">
+            <p>Currently <strong>v5.3.3</strong></p>
+            <span class="dot">.</span>
+            <a href="#">Download</a>
+            <span class="dot">.</span>
+            <a href="#">All releases</a>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <div class="get-started center">
+      <div class="syntax"><code><img src="./assets/svg exports/svgexport-16.png" alt=""></code>
+      </div>
+      <div class="heading-cont">
+        <h2>Get started any way you want</h2>
+      </div>
+      <p>Jump right into building with Bootstrap—use the CDN, install it via package <br> manager, or download the source code.</p>
+      <div class="link"><a href="#">Read install docs &nbsp;<span class="r-arr"><i class="fa-solid fa-arrow-right"></i></span></a></div>
+    </div>
+    
+    <section id="installation">
+      <div class="installation-container center">
+        <div class="left-installation">
+          <div class="install-icon"><img src="./assets/svg exports/svgexport-18.png" alt=""></div>
+          <div class="install-heading">
+            <h3>Install via package manager</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems, <br> Composer, or Meteor. Package managed installs don’t include <br> documentation or our full build scripts. You can also <a href="">use any demo from <br> our Examples repo</a> to quickly jumpstart Bootstrap projects.
+            </p>
+          </div>
+          <div class="highlight installation-highlight">$ &nbsp; 
+            <pre><code>npm install bootstrap@5.3.3</code></pre>
+            <span class="clipboard"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+          <div class="highlight installation-highlight">$ &nbsp; 
+            <pre><code>gem install bootstrap -v @5.3.3</code></pre>
+            <span class="clipboard"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+          <div class="end-para-left">
+            <p><a href="">Read our installation docs</a> for more info and additional package managers.</p>
+          </div>
+        </div>
+        <div class="right-installation">
+          <div class="install-icon"><img src="./assets/svg exports/svgexport-19.png" alt=""></div>
+          <div class="install-heading">
+            <h3>Include via CDN</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              When you only need to include Bootstrap’s compiled CSS or JS, you can use <a href="">jsDelivr</a>. See it in action with our simple <a href="">quick start</a>, or <a href="">browse the examples</a> to jumpstart your next project. You can also choose to include Popper and our JS <a href="">separately</a>.
+            </p>
+          </div>
+          <div class="highlight installation-highlight">&nbsp; 
+            <pre><code class="language-css">&lt;<span class="link-tag">link</span> <span class="href-attr">href</span>=<span class="install-link">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"</span> <span class="href-attr">rel</span>=<span class="install-link">"stylesheet"</span> <span class="href-attr">integrity</span>=<span class="install-link">"sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"</span> <span class="href-attr">crossorigin</span>=<span class="install-link">"anonymous"</span>&gt;</code></pre>
+            <span class="clipboard"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+          <div class="highlight installation-highlight">$ &nbsp; 
+            <pre class="overflow-hide"><code>gem install bootstrap -v @5.3.3</code></pre>
+            <span class="clipboard"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="read-get-started">
+      <div class="read-get-started-cont center">
+        <div class="read-get-heading-container">
+          <h5>Read our getting started guides</h5>
+        </div>
+        <div class="read-get-para-container">
+          <p>Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+        </div>
+        <div class="imgs-container">
+          <div class="img-container img-1-container">
+            <img src="./assets/webpack1.png" alt="Webpack">
+            <p>Webpack</p>
+          </div>
+          <div class="img-container img-1-container">
+            <img src="./assets/parcel.png" alt="Parcel">
+            <p>Parcel</p>
+          </div>
+          <div class="img-container img-1-container">
+            <img src="./assets/vite1.png" alt="Vite">
+            <p class="vite-para">Vite</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="customize">
+      <div class="customize-container center">
+        <div class="left-customize-cont">
+          <div class="customize-icon">
+            <img src="./assets/svg exports/svgexport-22.png" alt="">
+          </div>
+          <div class="customize-heading-container">
+            <h4>Customize everything with Sass</h4>
+          </div>
+          <div class="customize-para-container">
+            <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.</p>
+          </div>
+          <div class="customize-link">
+            <a href="#" class="link">Learn more about customizing <span class="r-arr"><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+      </div>
+      <div class="right-customize-empty"></div>
+    </div>
+    </section>
+
+    <section id="include">
+      <div class="include-container center">
+        <div class="left-installation left-include">
+          <div class="install-heading">
+            <h3>Include all of Bootstrap’s Sass</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              Import one stylesheet and you're off to the races with every feature of our CSS.
+            </p>
+          </div>
+          <div class="highlight installation-highlight include-highlight">
+              <pre><code class="html-comment">// Variable overrides first</code></pre>
+              <pre><code>$primary: #900;</code></pre>
+              <pre><code>$enable-shadows: true;</code></pre>
+              <pre><code>$prefix: "mo-";</code></pre>
+              <br>
+              <pre><code class="html-comment">// Then Import Bootstrap</code></pre>
+              <pre><code>$@import "../node_modules/bootstrap/scss/bootstrap";</code></pre>
+              <span class="clipboard clipboard-includes"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+          <div class="end-para-left">
+            <p>Learn more about our <a href="">global Sass options</a>.</p>
+          </div>
+        </div>
+        <div class="right-installation right-include">
+          <div class="install-heading">
+            <h3>Include what you need</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              The easiest way to customize Bootstrap—include only the CSS you need.</a>.
+            </p>
+          </div>
+          <div class="highlight installation-highlight include-highlight">
+            <pre><code class="html-comment">// Functions first</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/functions";</code></pre>
+              <br>
+              <pre><code class="html-comment">// Variable overrides second</code></pre>
+              <pre><code>$primary: #900;</code></pre>
+              <pre><code >$enable-shadows: true;</code></pre>
+              <pre><code>$prefix: "mo-";</code></pre>
+              <br>
+              <pre><code class="html-comment">// Required Bootstrap imports</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/variables";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/variables-dark";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/maps";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/mixins";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/mixins";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/root";</code></pre>
+              <br>
+              <pre><code class="html-comment">// Optional components</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/utilities";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/containers";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/grid";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/helpers";</code></pre>
+              <pre><code>@import "../node_modules/bootstrap/scss/utilities/api";</code></pre>
+              <span class="clipboard clipboard-includes"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+          <div class="end-para-left">
+            <p>Learn more about our <a href="">using Bootstrap with Sass</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="customize">
+      <div class="customize-container build-container center">
+        <div class="left-customize-cont">
+          <div class="customize-icon build-icon">
+            <img src="./assets/svg exports/svgexport-23.png" alt="">
+          </div>
+          <div class="customize-heading-container">
+            <h4>Build and extend in real-time with CSS variables</h4>
+          </div>
+          <div class="customize-para-container">
+            <p>Bootstrap 5 is evolving with each release to better utilize CSS variables for global theme styles, individual components, and even utilities. We provide dozens of variables for colors, font styles, and more at a :root level for use anywhere. On components and utilities, CSS variables are scoped to the relevant class and can easily be modified.</p>
+          </div>
+          <div class="customize-link">
+            <a href="#" class="link">Learn more about CSS variables <span class="r-arr"><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+      </div>
+      <div class="right-customize-empty"></div>
+    </div>
+    </section>
+
+    <section id="include">
+      <div class="include-container center">
+        <div class="left-installation left-include">
+          <div class="install-heading">
+            <h3>Using CSS variables</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              Use any of our global :root variables to write new styles. CSS variables use the var(--bs-variableName) syntax and can be inherited by children elements.
+            </p>
+          </div>
+          <div class="highlight installation-highlight include-highlight">
+              <pre><code>.component <span>{</span></code></pre>
+              <pre class="mar-left"><code>color: var(--bs-gray-800)</code></pre>
+              <pre class="mar-left"><code>background-color: var(--bs-gray-100)</code></pre>
+              <pre class="mar-left"><code>border: 1px solid var(--bs-gray-200);</code></pre>
+              <pre class="mar-left"><code>border-radius: .25em;</code></pre>
+              <pre><code><span>}</span></code></pre>
+              <br>
+              <pre><code>.component-header <span>{</span></code></pre>
+              <pre class="mar-left"><code>color: var(--bs-purple) <span>{</span></code></pre>
+              <pre><code><span>}</span></code></pre>
+              <span class="clipboard clipboard-includes"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+        </div>
+        <div class="right-installation right-include">
+          <div class="install-heading">
+            <h3>Customizing via CSS variables</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              Override global, component, or utility class variables to customize Bootstrap just how you like. No need to redeclare each rule, just a new variable value.</a>.
+            </p>
+          </div>
+          <div class="highlight installation-highlight include-highlight">
+              <pre><code>body <span>{</span></code></pre>
+              <pre class="mar-left"><code>--bs-body-font-family: var(--bs-font-monospace);</code></pre>
+              <pre class="mar-left"><code>--bs-body-line-height: 1.4;</code></pre>
+              <pre class="mar-left"><code>--bs-body-bg: var(--bs-gray-100);</code></pre>
+              <pre><code><span>}</span></code></pre>
+              <!-- <br> -->
+                <br>
+                <pre><code>table <span>{</span></code></pre>
+                <pre class="mar-left"><code>--bs-table-color: var(--bs-gray-600);</code></pre>
+                <pre class="mar-left"><code>--bs-table-bg: var(--bs-gray-100);</code></pre>
+                <pre class="mar-left"><code>--bs-table-border-color: transparent;</code></pre>
+                <pre><code><span>}</span></code></pre>
+                <span class="clipboard clipboard-includes"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- components meet utility section -->
+    <section id="customize">
+      <div class="customize-container build-container center">
+        <div class="left-customize-cont">
+          <div class="build-icons-svgs">
+            <div class="customize-icon build-icon">
+              <img src="./assets/svg exports/svgexport-24.png" alt="">
+            </div>
+            <div class="customize-icon build-icon">
+              <img src="./assets/svg exports/svgexport-26.png" alt="">
+            </div>
+          </div>
+          <div class="customize-heading-container">
+            <h4>Components, meet the Utility API</h4>
+          </div>
+          <div class="customize-para-container">
+            <p>New in Bootstrap 5, our utilities are now generated by our <a href="" class="link utility-link">Utility API</a>. We built it as a feature-packed Sass map that can be quickly and easily customized. It's never been easier to add, remove, or modify any utility classes. Make utilities responsive, add pseudo-class variants, and give them custom names.</p>
+          </div>
+      </div>
+      <div class="right-customize-empty"></div>
+    </div>
+    </section>
+
+    <!-- Quickly customize components section -->
+    <section id="include">
+      <div class="include-container quickly-container center">
+        <div class="left-installation left-include">
+          <div class="install-heading">
+            <h3>Quickly customize components</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              Apply any of our included utility classes to our components to customize their appearance, like the navigation example below. There are hundreds of classes available—from <a href="" class="link">positioning</a> and <a href="" class="link">sizing</a> to <a href="" class="link">colors</a> and <a href="" class="link">effects</a>. Mix them with CSS variable overrides for even more control.
+            </p>
+          </div>
+          <div class="toggle-btn-container">
+            <div class="first-toggle">
+              <div class="toggle-first home-first active">Home</div>
+              <div class="toggle-first profile-first">Profile</div>
+              <div class="toggle-first contact-first">Contact</div>
+            </div>
+            <div class="second-toggle">
+              <div class="toggle-first home-second active">Home</div>
+              <div class="toggle-first profile-second">Profile</div>
+              <div class="toggle-first contact-second">Contact</div>
+            </div>
+          </div>
+          <div class="highlight installation-highlight include-highlight quickly-highlight">
+              <div class="quickly-code-contain">
+                <pre><code>&lt;ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);"&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;li class="nav-item" role="presentation"&gt;</code></pre>
+                <pre class="mar-left-1"><code>&lt;button&gt; class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true"&gt;Home&lt;/button&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;/li&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;li class="nav-item" role="presentation"&gt;</code></pre>
+                <pre class="mar-left-1"><code>&lt;button&gt; class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"&gt;Profile&lt;/button&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;/li&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;li class="nav-item" role="presentation"&gt;</code></pre>
+                <pre class="mar-left-1"><code>&lt;button&gt; class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false"&gt;Contact&lt;/button&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;/li&gt;</code></pre>
+                <pre><code>&lt;/ul&gt;</code></pre>
+                <br>
+                <pre><code>.component-header <span>{</span></code></pre>
+                <pre class="mar-left"><code>color: var(--bs-purple) <span>{</span></code></pre>
+                <pre><code><span>}</span></code></pre>
+              </div>
+              <span class="clipboard clipboard-includes"><i class="fa-regular fa-clipboard"></i></span>
+            </div>
+            <div class="end-para-left">
+              <p><a href="">Explore the utility API</a><span class="r-arr"><i class="fa-solid fa-arrow-right utility-api-i"></i></span></p>
+            </div>
+        </div>
+        <div class="right-installation right-include">
+          <div class="install-heading">
+            <h3>Create and extend utilities</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              Use Bootstrap's utility API to modify any of our included utilities or create your own custom utilities for any project. Import Bootstrap first, then use Sass map functions to modify, add, or remove utilities.</a>.
+            </p>
+          </div>
+          <div class="highlight installation-highlight include-highlight">
+              <pre><code>@import "bootstrap/scss/bootstrap";</code></pre>
+              <br>
+              <pre><code>$utilities: map-merge(</code></pre>
+              <pre class="mar-left"><code> $utilities,</code></pre>
+              <pre class="mar-left"><code>(</code></pre>
+              <pre><code class="mar-left-1">"cursor": (</code></pre>
+              <pre><code class="mar-left-2">property: cursor,</code></pre>
+              <pre><code class="mar-left-2">class: cursor,</code></pre>
+              <pre><code class="mar-left-2">responsive: true,</code></pre>
+              <pre><code class="mar-left-2">values: auto pointer grab,</code></pre>
+              <pre><code class="mar-left-1">)</code></pre>
+              <pre><code class="mar-left">)</code></pre>
+              <pre><code>);</code></pre>
+              <span class="clipboard clipboard-includes"><i class="fa-regular fa-clipboard"></i></span>
+          </div>
+          <div class="end-para-left">
+            <p><a href="">Explore the utility API</a><span class="r-arr"><i class="fa-solid fa-arrow-right utility-api-i"></i></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Powerful javascript -->
+    <section id="customize">
+      <div class="customize-container powerful-container center">
+        <div class="left-customize-cont">
+          <div class="customize-icon powerful-icon">
+            <img src="./assets/svg exports/svgexport-27.png" alt="">
+          </div>
+          <div class="customize-heading-container">
+            <h4>Powerful JavaScript plugins <br> without jQuery</h4>
+          </div>
+          <div class="customize-para-container">
+            <p>Add toggleable hidden elements, modals and offcanvas menus, popovers and tooltips, and so much more—all without jQuery. Bootstrap's JavaScript is HTML-first, meaning most plugins are added with <span class="data">data</span> attributes in your HTML. Need more control? Include individual plugins programmatically.</p>
+          </div>
+          <div class="customize-link">
+            <a href="#" class="link">Learn more about Bootstrap JavaScript <span class="r-arr"><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+      </div>
+      <div class="right-customize-empty"></div>
+    </div>
+    </section>
+
+    <!-- data attribute API -->
+    <section id="include">
+      <div class="include-container quickly-container center">
+        <div class="left-installation left-include">
+          <div class="install-heading">
+            <h3>Data attribute API</h3>
+          </div>
+          <div class="install-para">
+            <p>
+              Why write more JavaScript when you can write HTML? Nearly all of Bootstrap's JavaScript plugins feature a first-class <span class="data">data</span> API, allowing you to use JavaScript just by adding data attributes.
+            </p>
+          </div>
+          <div class="toggle-dropdown-container">
+            <button class="dropdown-attribute">
+              Dropdown <span><i class="fa-solid fa-caret-down"></i></span>
+            </button>
+            <div class="dropdown-popup-menu">
+              <ul>
+                <li>Dropdown Item</li>
+                <li>Dropdown Item</li>
+                <li>Dropdown Item</li>
+              </ul>
+            </div>
+            <!--  -->
+          </div>
+          <div class="highlight installation-highlight include-highlight quickly-highlight">
+              <div class="quickly-code-contain">
+                <pre><code>&lt;div class="dropdown"&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"&gt;</code></pre>
+                <pre class="mar-left-1"><code>Dropdown</code></pre>
+                <pre class="mar-left"><code>&lt;/button&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;ul class="dropdown-menu"&gt;</code></pre>
+                <pre class="mar-left-1"><code>&lt;li&gt;&lt;button&gt;&lt; class="dropdown-item" type="button"&gt;Dropdown item&lt;/button&gt;&lt;/li&gt;</code></pre>
+                <pre class="mar-left-1"><code>&lt;li&gt;&lt;button&gt;&lt; class="dropdown-item" type="button"&gt;Dropdown item&lt;/button&gt;&lt;/li&gt;</code></pre>
+                <pre class="mar-left-1"><code>&lt;li&gt;&lt;button&gt;&lt; class="dropdown-item" type="button"&gt;Dropdown item&lt;/button&gt;&lt;/li&gt;</code></pre>
+                <pre class="mar-left"><code>&lt;/ul&gt;</code></pre>
+                <pre><code>&lt;/div&gt;</code></pre>
+              </div>
+              <span class="clipboard clipboard-includes"><i class="fa-regular fa-clipboard"></i></span>
+            </div>
+            <div class="end-para-left js-modules">
+              <p>Learn more about our <a href="">JavaScript as modules</a> and <a href="">using the programmatic API.</a></p>
+            </div>
+        </div>
+        <div class="right-installation right-include">
+          <div class="install-heading">
+            <h3>Comprehensive set of plugins</h3>
+          </div>
+          <div class="install-para comprehensive-para">
+            <p>
+              Bootstrap features a dozen plugins that you can drop into any project. Drop them in all at once, or choose just the ones you need.</a>.
+            </p>
+          </div>
+          <div class="highlight installation-highlight comprehensive-highlight">
+                <div class="grid grid-1">
+                  <h5>Alert</h5>
+                  <p>Show and hide alert messages to your users</p>
+                </div>
+                <div class="grid grid-2">
+                  <h5>Button</h5>
+                  <p>Programatically control the active state for buttons</p>
+                </div>
+                <div class="grid grid-3">
+                  <h5>Carousel</h5>
+                  <p>Add slideshows to any page, including support for crossfade</p>
+                </div>
+                <div class="grid grid-4">
+                  <h5>Collapse</h5>
+                  <p>Expand and collapse areas of content, or create accordions.</p>
+                </div>
+                <div class="grid grid-5">
+                  <h5>Dropdowns</h5>
+                  <p>Create menus of links, actions, forms, and more</p>
+                </div>
+                <div class="grid grid-6">
+                  <h5>Modal</h5>
+                  <p>Add flexible and responsive dialogs to your project</p>
+                </div>
+                <div class="grid grid-7">
+                  <h5>Offcanvas</h5>
+                  <p>Build and toggle hidden sidebars into any page.</p>
+                </div>
+                <div class="grid grid-8">
+                  <h5>Popover</h5>
+                  <p>Create custom overlays. Built on Popper</p>
+                </div>
+                <div class="grid grid-9">
+                  <h5>Scrollspy</h5>
+                  <p>Automatically update active nav links based on page scroll.</p>
+                </div>
+                <div class="grid grid-10">
+                  <h5>Tab</h5>
+                  <p>Allow Bootstrap nav components to toggle contents.</p>
+                </div>
+                <div class="grid grid-11">
+                  <h5>Toast</h5>
+                  <p>Show and hide notifications to your visitors</p>
+                </div>
+                <div class="grid grid-12">
+                  <h5>Tooltip</h5>
+                  <p>Replace browser tooltips with custom ones. Built on Popper</p>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="customize">
+      <div style="margin-bottom: 80px; gap: 10px;" class="customize-container personalise-container bootstrap-svgs-container center">
+        <div class="left-customize-cont">
+          <div class="customize-icon build-icon">
+            <img src="./assets/svg exports/svgexport-28.png" alt="">
+          </div>
+          <div class="customize-heading-container">
+            <h4>Personalize it with Bootstrap Icons</h4>
+          </div>
+          <div class="customize-para-container">
+            <p><a href="" class="link">Bootstrap Icons</a> is an open source SVG icon library featuring over 1,800 glyphs, with more added every release. They're designed to work in any project, whether you use Bootstrap itself or not. Use them as SVGs or icon fonts—both options give you vector scaling and easy customization via CSS.</p>
+          </div>
+          <div class="customize-link">
+            <a href="#" class="link">Get Bootstrap Icons <span class="r-arr"><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+      </div>
+      <div class="right-customize-empty img-parent-empty">
+        <div class="img-container">
+          <img style="margin-top: 55px;" src="./assets/bootstrap-icons@2x.png" alt="">
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--  -->
+    <section id="customize">
+      <div style="margin-bottom: 80px; gap: 10px;" class="customize-container personalise-container center">
+        <div class="left-customize-cont">
+          <div class="customize-icon build-icon">
+            <img src="./assets/svg exports/svgexport-29.png" alt="">
+          </div>
+          <div class="customize-heading-container">
+            <h4>Make it yours with official Bootstrap Themes</h4>
+          </div>
+          <div class="customize-para-container">
+            <p>Take Bootstrap to the next level with premium themes from the <a href="" class="link">official Bootstrap Themes marketplace</a>. Themes are built on Bootstrap as their own extended frameworks, rich with new components and plugins, documentation, and powerful build tools.</p>
+          </div>
+          <div class="customize-link">
+            <a href="#" class="link">Browse Bootstrap Themes<span class="r-arr"><i class="fa-solid fa-arrow-right"></i></span></a>
+          </div>
+      </div>
+      <div class="right-customize-empty ">
+        <div class="img-container">
+          <img style="margin-top: 55px;" src="./assets/bts.png" alt="">
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-container center">
+        <div class="footer-grid">
+          <div class="bootstrap-icon-container">
+            <img src="./assets/svg exports/Bootstrap-1.png" alt="">
+            <span>Bootstrap</span>
+          </div>
+          <div class="bootstrap-designer">
+            Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.
+          </div>
+          <div class="code-license">Code licensed MIT, docs CC BY 3.0</div>
+          <div class="current-license">Currently v5.3.3</div>
+        </div>
+        <div class="footer-grid">
+          <ul>
+            <li class="menu-title">Links</li>
+            <li>Home</li>
+            <li>Docs</li>
+            <li>Examples</li>
+            <li>Icons</li>
+            <li>Themes</li>
+            <li>Blog</li>
+            <li>Swag Store</li>
+          </ul>
+        </div>
+        <div class="footer-grid">
+          <ul>
+            <li class="menu-title">Guides</li>
+            <li>Getting Started</li>
+            <li>Starter Template</li>
+            <li>Webpack</li>
+            <li>Parcel</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+        <div class="footer-grid">
+          <ul>
+            <li class="menu-title">Projects</li>
+            <li>Bootstrap 5</li>
+            <li>Bootstrap 4</li>
+            <li>Icons</li>
+            <li>RFS</li>
+            <li>Examples repo</li>
+          </ul>
+        </div>
+        <div class="footer-grid">
+          <ul>
+            <li class="menu-title">Community</li>
+            <li>Issues</li>
+            <li>Discussions</li>
+            <li>Corporate sponsors</li>
+            <li>Open Collective</li>
+            <li>Stack Overflow</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
